@@ -1,6 +1,8 @@
 # 项目运行说明
-使用机器：192.168.1.88
-运行环境：/home/guanyue/anaconda3/envs/tf_cpu36/bin/python3.6
+使用机器：192.168.1.88  
+
+运行环境：/home/guanyue/anaconda3/envs/tf_cpu36/bin/python3.6  
+
 模型测试：
 
 - `cd conf`
