@@ -10,8 +10,8 @@
 - `cd python`
 - `python train.py`
 
-# 模型导出及特征空间
-说明：该项目使用tf.estimator中官方wide&deep模型，使用tf.dataset读取数据。特征空间主要在导出和服务阶段使用，是一个字典`{name:output}`格式来描述输出签名
+# 模型导出及特征解析规范
+说明：该项目使用tf.estimator中官方wide&deep模型，使用tf.dataset读取数据。特征解析规范主要在导出和服务阶段使用，是一个字典`{name:output}`格式来描述输出签名
 
 模型导出：
 
@@ -21,7 +21,7 @@
 - `python export_savedmodel.py`
 - 运行成功的话导出模型会保存在./wide_deep/export_model目录下，该模型用作线上部署
 
-特征空间（各特征使用数据类型说明）：
+特征解析规范（各特征使用数据类型说明）：
 ```'did': VarLenFeature(dtype=tf.string)
 'coocaa_v_id': VarLenFeature(dtype=tf.string)
 'is_vip': VarLenFeature(dtype=tf.string)
